@@ -1,0 +1,12 @@
+.feed {
+    padding: 20px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.feed_right {
+    padding-left: 20px;
+    /* margin-top: 35px; */
+}
+

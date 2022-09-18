@@ -23,7 +23,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#files
-/src/components/UserProfile.js
-/src/css/UserProfile.css
-/src/config/dummyData.js

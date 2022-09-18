@@ -1,0 +1,45 @@
+.userProfile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.userProfile__header {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 50px;
+}
+.userProfile__header_info {
+    margin-left: 50px;
+    width: 55%;
+}
+.userProfile__header_info div {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px 25px;
+}
+.userProfile__header_info_username {
+    flex : 1;
+}
+.userProfile__header_info_followBtn {
+    flex: 0;
+    width: 80px;
+    border: none;
+    border: 1px solid lightgray;
+}
+
+.userProfile__header_info_details_followers {
+    margin-left: 30px;
+}
+.userProfile__header_info_details_followings {
+    margin-left: 30px;
+}
+.userProfile__posts {
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+    width: 80%;
+}

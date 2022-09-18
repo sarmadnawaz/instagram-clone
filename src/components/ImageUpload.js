@@ -46,6 +46,7 @@ function ImageUpload({ username }) {
   };
 
   return (
+    <div className="imageUpload__container">
     <div className="imageUpload">
       <div className="imageUpload__header">
         <Avatar
@@ -87,6 +88,7 @@ function ImageUpload({ username }) {
           Upload
         </button>
       </div>
+    </div>
     </div>
   );
 }
