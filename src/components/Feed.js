@@ -13,11 +13,11 @@ function Feed({ user, posts }) {
       </div>
       <div className="feed_right">
         <InstagramEmbed
-          url="https://www.instagram.com/p/CUbHfhpswxt/"
+          url="https://www.instagram.com/p/CgmUdeDI-l5/?igshid=NDRkN2NkYzU%3D"
           width={328}
         />
         <InstagramEmbed
-          url="https://www.instagram.com/p/CUbHfhpswxt/"
+          url="https://www.instagram.com/p/Chzjj3XoAej/?igshid=NDRkN2NkYzU="
           width={328}
         />
         <InstagramEmbed

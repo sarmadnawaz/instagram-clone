@@ -3,6 +3,10 @@ import { Avatar } from '@mui/material';
 import "../css/UserProfileHeader.css"
 
 function UserProfileHeader({ userData }) {
+  const [follow, setFollow] = React.useState(false)
+  function handleFollow(){
+    setFollow(true);
+  }
   return (
       <div className="userProfile__header">
         <Avatar
@@ -16,8 +20,8 @@ function UserProfileHeader({ userData }) {
             <h3 className="userProfile__header_info_username">
               {userData.username}
             </h3>
-            <button className="userProfile__header_info_followBtn">
-              Follow
+            <button onClick={handleFollow} className="userProfile__header_info_followBtn">
+              {follow ? 'Following' : 'Follow'}
             </button>
           </div>
           <div className="userProfile__header_info_details">

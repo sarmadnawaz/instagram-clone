@@ -35,6 +35,7 @@ function ImageUpload({ username }) {
             imageUrl: downloadURL,
             username,
           }).catch((error) => alert(error.message))
+          setProgress(0);
           addDoc(collection(db, "users", username, "posts"), 
           {
             timestamp: serverTimestamp(),
@@ -42,7 +43,6 @@ function ImageUpload({ username }) {
             imageUrl: downloadURL,
             username,
           }).catch((error) => alert(error.message))
-          setProgress(0);
           setCaption("");
           setImage(null);
         });

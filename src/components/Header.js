@@ -9,7 +9,7 @@ function Header({ user = ''} = {}) {
   const navigate = useNavigate()
   return (
     <div className="header">
-        <img onClick={() => navigate('/dashboard')} className="header__logo" src="/img/logo-1.png" alt="logo" />
+        <img onClick={() => navigate('/')} className="header__logo" src="/img/logo-1.png" alt="logo" />
         {user ? (
           <Button onClick={() => signOut(auth)}>LogOut</Button>
         ) : (

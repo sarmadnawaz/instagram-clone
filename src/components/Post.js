@@ -52,7 +52,7 @@ function Post({ user, postId, username, caption, imageUrl = "" }) {
             </p>
         ))}
       </div>
-      <form className="post__commentBox" onSubmit={postComment}>
+      { user && <form className="post__commentBox" onSubmit={postComment}>
         <input className="post__input"
         type="text"
         placeholder="Add a comment..."
@@ -63,7 +63,7 @@ function Post({ user, postId, username, caption, imageUrl = "" }) {
         disabled={!comment}
         type="submit"
         >post</button>
-      </form>
+      </form> }
     </div>
   );
 }
