@@ -34,9 +34,14 @@ function ImageUpload({ username }) {
             caption,
             imageUrl: downloadURL,
             username,
-          }).then(() => {
-            console.log("success");
-          });
+          }).catch((error) => alert(error.message))
+          addDoc(collection(db, "users", username, "posts"), 
+          {
+            timestamp: serverTimestamp(),
+            caption,
+            imageUrl: downloadURL,
+            username,
+          }).catch((error) => alert(error.message))
           setProgress(0);
           setCaption("");
           setImage(null);

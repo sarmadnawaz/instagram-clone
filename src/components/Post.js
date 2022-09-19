@@ -3,6 +3,7 @@ import Avatar from "@mui/material/Avatar";
 import "../css/Post.css";
 import { addDoc, collection, doc, onSnapshot } from "firebase/firestore";
 import db from '../firebase/firebase'
+import { Link } from "react-router-dom";
 
 
 function Post({ user, postId, username, caption, imageUrl = "" }) {
@@ -29,6 +30,7 @@ function Post({ user, postId, username, caption, imageUrl = "" }) {
 
   return (
     <div className="post">
+      <Link className="post__header-Link"to={`/${username}`}>
       <div className="post__header">
         <Avatar
           className="post__avatar"
@@ -37,6 +39,7 @@ function Post({ user, postId, username, caption, imageUrl = "" }) {
         />
         <h3>{username}</h3>
       </div>
+      </Link>
       <img className="post__image" src={imageUrl} />
       <h4 className="post__text">
         <strong>{username}</strong> {caption}
